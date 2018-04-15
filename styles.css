@@ -16,11 +16,14 @@ body {
   grid-auto-rows: auto auto;
 }
 
+main {
+  grid-column: 2;
+}
+
 header {
   display: flex;
   align-items: stretch;
   border-bottom: 1px solid #e1eae9;
-  grid-column: 2;
   height: 8vh;
 }
 
@@ -119,12 +122,61 @@ hr {
   padding:;
 }
 
-/*intro content styling*/
-
 main {
   grid-column: 2;
 }
 .intro {
-
+  color: #4f4949;
+  display: inline-block;
+  width: 74%;
 }
+
+.title {
+  margin: 5% 5% 0 5%;
+}
+
+h5 {
+  margin: 0 0 0 5%;
+}
+
+span {
+  color: #AFE0FB;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+.intro-buttons {
+  display: inline-block;
+  width: 24%;
+}
+
+.intro-buttons button {
+  border-radius: 25px;
+  padding: 3%;
+  margin-right: 5%;
+}
+
+table {
+  margin: 7% 0 0 5%;
+  width: 85%;
+  font-size: 1em;
+  color: #4f4949;
+}
+
+tr {
+  text-align: center;
+}
+
+.table-sections td {
+  padding-bottom: 5%;
+  opacity: .6;
+}
+
+.table-sections td:hover {
+  border-bottom: 2px solid #2C98F0;
+  opacity: 1;
+}
+
 
