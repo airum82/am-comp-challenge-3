@@ -31,7 +31,6 @@ nav {
   background-color: #2196F3;
   grid-column: 1;
   grid-row: 1;
-  height: 100vh;
 }
 
 .fa-bars:hover {
@@ -88,10 +87,15 @@ hr {
 
 .portrait-image {
   border-radius: 51%;
-  height: 17vh;
-  width: 76%;
+  height: 18vh;
+  width: 75%;
   text-align: center;
   margin: 10% 0 0 10%;
+}
+
+.phoebe {
+  text-align: center;
+  color: #4f4949;
 }
 
 .nav-list {
@@ -125,6 +129,9 @@ hr {
 main {
   grid-column: 2;
 }
+
+/*title styling*/
+
 .intro {
   color: #4f4949;
   display: inline-block;
@@ -158,6 +165,8 @@ span:hover {
   margin-right: 5%;
 }
 
+/*sections and graph styling*/
+
 table {
   margin: 7% 0 0 5%;
   width: 85%;
@@ -179,4 +188,113 @@ tr {
   opacity: 1;
 }
 
+.data-section{
+  background-color: #EDF2F6;
+  padding-top: 4vh;
+}
 
+.circle-graphs {
+  display: inline-block;
+  width: 46%;
+}
+
+.chart-text {
+  fill: #000;
+  -moz-transform: translateY(0.25em);
+  -ms-transform: translateY(0.25em);
+  -webkit-transform: translateY(0.25em);
+  transform: translateY(0.25em);
+}
+
+.chart-number {
+  font-size: 0.6em;
+  line-height: 1;
+  text-anchor: middle;
+  -moz-transform: translateY(-0.25em);
+  -ms-transform: translateY(-0.25em);
+  -webkit-transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
+}
+
+.chart-label {
+  font-size: 0.2em;
+  text-transform: uppercase;
+  text-anchor: middle;
+  -moz-transform: translateY(0.7em);
+  -ms-transform: translateY(0.7em);
+  -webkit-transform: translateY(0.7em);
+  transform: translateY(0.7em);
+}
+
+.graph-labels {
+  display: block;
+  background-color: white;
+  margin: 3% auto 10% auto;
+  text-align: center;
+  width: 51%;
+  border-radius: 36px;
+  padding: 2%;
+}
+
+.applicants {
+  width: 25%;
+}
+
+.bar-graph-section {
+  display: inline-block;
+  width: 53%;
+}
+
+.bar-graph {
+  width: 83%;
+  height: 18vh;
+  margin: 0 6% 0 6%;
+}
+
+/*collaps button and job description content*/
+
+.expand-button {
+  border-radius: 50%;
+  padding: 2% 2% 1% 2%;
+  font-size: 1.3em;
+}
+
+.button-border {
+  display:inline-block;
+  opacity: 1;
+  width: 46%;
+}
+
+.job-description {
+  background-color: #BBDEFB;
+  padding: .1% 0 .1% 0;
+  margin: 2%;
+  width: 65%;
+}
+
+.job-description-title {
+  background-color: #2196F3;
+  padding: 2% 0 2% 2%;
+  margin: 0;
+}
+
+.edit-button {
+  background-color: #BBDEFB;
+}
+
+.job-info tr {
+  
+}
+
+.job-info td {
+  border-bottom: 2px solid black;
+  padding: 5% 0 5% 0;
+}
+
+.info-key {
+  padding-right: 12%;
+}
+
+#no-border {
+  border: none;
+}
