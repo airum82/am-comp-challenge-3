@@ -265,11 +265,18 @@ tr {
   width: 46%;
 }
 
+.details-and-links {
+  display: grid;
+  grid-template-columns: 63% 30%;
+  grid-column-gap: 1vw;
+  justify-content: center;
+  margin-top: 5%;
+}
+
 .job-description {
+  display: inline-block;
   background-color: #BBDEFB;
   padding: .1% 0 .1% 0;
-  margin: 2%;
-  width: 65%;
 }
 
 .job-description-title {
@@ -282,7 +289,7 @@ tr {
   background-color: #BBDEFB;
 }
 
-.job-info tr {
+.job-info {
   
 }
 
@@ -297,4 +304,53 @@ tr {
 
 #no-border {
   border: none;
+}
+
+.social-media-divs {
+  margin: 12% 0 18% 0;
+}
+
+.social-media button {
+  display: block;
+  text-align: left;
+  padding: 7%;
+  width: 100%;
+  margin-bottom: 6%;
+}
+
+.social-media button i {
+  margin-right: 15%;
+}
+
+.social-media-p {
+  word-wrap: break-word;
+}
+
+.reddit {
+  background-color: #2196F3;
+}
+
+.tweet {
+  background-color: #FF5722;
+}
+
+.hire-me {
+  background-color: #BCDFFA;
+}
+
+.links {
+  display: inline;
+  background-color: white;
+  padding: 7% 0 7% 0;
+  width: 80%;
+}
+
+.copy {
+  display: inline;
+  background-color: #2196F3;
+  padding: 8% 11% 8% 0;
+}
+
+.copy {
+  cursor: pointer;
 }
