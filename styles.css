@@ -108,10 +108,6 @@ hr {
   font-size: 1.2em;
 }
 
-.list-title {
-
-}
-
 .nav-hover:hover {
   color: #757575;
   cursor: pointer;
@@ -161,6 +157,7 @@ span:hover {
 
 .intro-buttons button {
   border-radius: 25px;
+  cursor: pointer;
   padding: 3%;
   margin-right: 5%;
 }
@@ -353,4 +350,71 @@ tr {
 
 .copy {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 850px) {
+
+  body {
+    grid-template-columns: 100%;
+  }
+
+  main {
+    grid-column: 1;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .circle-graphs {
+    display: block;
+    margin: auto;
+    width: 70%;
+  }
+
+  .bar-graph-section {
+    margin: 0 15%;
+    width: 68%;
+
+  }
+
+  .graph-labels {
+    font-size: .8em;
+  }
+
+  .button-border {
+    display: none;
+  }
+
+  .expand-button {
+    margin: 0 45%;
+  }
+
+  .details-and-links {
+    grid-template-columns: 90%;
+    grid-row-gap: 2vh;
+  }
+
+  .reddit,
+  .tweet,
+  .hire-me {
+    font-size: 1.5em;
+  }
+
+  .table-sections td {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+  }
+
+  .intro-buttons {
+    padding-top: 3%;
+  }
+
+  .intro-buttons button {
+    display: block;
+    margin-bottom: 3%;
+  }
 }
