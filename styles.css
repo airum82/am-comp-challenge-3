@@ -1,3 +1,5 @@
+/* color scheme */
+
 .dark-primary-color    { background: #1976D2; }
 .default-primary-color { background: #2196F3; }
 .light-primary-color   { background: #BBDEFB; }
@@ -54,8 +56,8 @@ nav {
 
 .search {
   border-bottom: 1px solid #e1eae9;
-  border-right: 0;
   border-left: 0;
+  border-right: 0;
   border-top: 0;
   flex-grow: 2;
   font-size: 1.5em;
@@ -79,7 +81,7 @@ nav {
   cursor: pointer;
 }
 
-/*Nav Bar styling*/
+/* Nav Bar styling */
 
 hr {
   opacity: .5;
@@ -88,14 +90,14 @@ hr {
 .portrait-image {
   border-radius: 51%;
   height: 18vh;
-  width: 75%;
+  margin: 10% 0 0 18%;
   text-align: center;
-  margin: 10% 0 0 10%;
+  width: 60%;
 }
 
 .phoebe {
-  text-align: center;
   color: #4f4949;
+  text-align: center;
 }
 
 .nav-list {
@@ -104,8 +106,8 @@ hr {
 }
 
 .nav-list li {
-  padding: 2%;
   font-size: 1.2em;
+  padding: 3% 3% 6% 3%;
 }
 
 .nav-hover:hover {
@@ -126,7 +128,7 @@ main {
   grid-column: 2;
 }
 
-/*title styling*/
+/* title styling */
 
 .intro {
   color: #4f4949;
@@ -158,17 +160,17 @@ span:hover {
 .intro-buttons button {
   border-radius: 25px;
   cursor: pointer;
-  padding: 3%;
   margin-right: 5%;
+  padding: 3%;
 }
 
-/*sections and graph styling*/
+/* sections and graph styling */
 
 table {
+  color: #4f4949;
+  font-size: 1em;
   margin: 7% 0 0 5%;
   width: 85%;
-  font-size: 1em;
-  color: #4f4949;
 }
 
 tr {
@@ -226,15 +228,15 @@ tr {
 .graph-labels {
   display: block;
   background-color: white;
+  border-radius: 36px;
   margin: 3% auto 10% auto;
+  padding: 2%;
   text-align: center;
   width: 51%;
-  border-radius: 36px;
-  padding: 2%;
 }
 
 .applicants {
-  width: 25%;
+  width: 30%;
 }
 
 .bar-graph-section {
@@ -243,17 +245,17 @@ tr {
 }
 
 .bar-graph {
-  width: 83%;
   height: 18vh;
   margin: 0 6% 0 6%;
+  width: 83%;
 }
 
-/*collaps button and job description content*/
+/* collaps button and job description content */
 
 .expand-button {
   border-radius: 50%;
-  padding: 2% 2% 1% 2%;
   font-size: 1.3em;
+  padding: 2% 2% 1% 2%;
 }
 
 .button-border {
@@ -278,21 +280,28 @@ tr {
 
 .job-description-title {
   background-color: #2196F3;
-  padding: 2% 0 2% 2%;
   margin: 0;
+  padding: 2% 0 2% 2%;
 }
 
 .edit-button {
   background-color: #BBDEFB;
 }
 
-.job-info {
-  
+.job-info tr {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
 }
 
 .job-info td {
   border-bottom: 2px solid black;
   padding: 5% 0 5% 0;
+}
+
+.info-description {
+  flex-grow: 2;
+  text-align: center;
 }
 
 .info-key {
@@ -309,10 +318,10 @@ tr {
 
 .social-media button {
   display: block;
-  text-align: left;
-  padding: 7%;
-  width: 100%;
   margin-bottom: 6%;
+  padding: 7%;
+  text-align: left;
+  width: 100%;
 }
 
 .social-media button i {
@@ -352,7 +361,9 @@ tr {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 850px) {
+/* Responsiveness styling */
+
+@media only screen and (max-width: 835px) {
 
   body {
     grid-template-columns: 100%;
@@ -365,9 +376,23 @@ tr {
   nav {
     display: none;
   }
+
+  .graph-labels {
+    font-size: .8em;
+  }
+
+  .button-border {
+    display: none;
+  }
+
+  .expand-button {
+    margin: 0 45%;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
+  
   .circle-graphs {
     display: block;
     margin: auto;
@@ -417,4 +442,5 @@ tr {
     display: block;
     margin-bottom: 3%;
   }
+
 }

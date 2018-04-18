@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Static Composition 3</title>
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
@@ -14,22 +15,22 @@
         </i>
         <i class="fas fa-user-secret"></i>
         <input type="text" aria-label="search" class="search" placeholder="search for a job">
-        <i class="fas fa-user header-options"></i>
-        <i class="fas fa-calendar-alt header-options"></i>
-        <i class="far fa-plus-square header-options"></i>
+        <i class="fas fa-user header-options" aria-label="user"></i>
+        <i class="fas fa-calendar-alt header-options" aria-label="calendar"></i>
+        <i class="far fa-plus-square header-options" aria-label="additional resources"></i>
       </header>
       <section class="intro">
         <h1 class="title">Customer Service Representative</h1>
-        <h5><i class="fas fa-location-arrow"></i> Denver, CO &nbsp; * &nbsp; <span>preview this post</span></h5>
+        <h5><i class="fas fa-location-arrow"></i> Denver, CO &nbsp; * &nbsp; <span role="preview post">preview this post</span></h5>
       </section>
       <div class="intro-buttons">
           <button>Open</button>
-          <button><i class="fas fa-bookmark"></i></button>
-          <button><i class="fas fa-pencil-alt"></i></button>
-          <button><i class="fas fa-trash-alt"></i></button>
+          <button aria-label="bookmark"><i class="fas fa-bookmark"></i></button>
+          <button aria-label="edit"><i class="fas fa-pencil-alt"></i></button>
+          <button aria-label="trash"><i class="fas fa-trash-alt"></i></button>
       </div>
       <table>
-        <tr class="table-sections">
+        <tr class="table-sections" aria-label="sections">
           <td>SUMMARY</td>
           <td>APPLICANTS</td>
           <td>JOB BOARD</td>
@@ -42,6 +43,7 @@
       <section class="data-section">
         <div class="circle-graphs">
           <svg width="30%" height="20vh" viewBox="0 0 42 42" class="donut">
+          <title>Total Applicants</title>
           <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
           <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
           <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#FF5722" stroke-width="3" stroke-dasharray="70 30" stroke-dashoffset="25"></circle>
@@ -56,6 +58,7 @@
             </g>
           </svg>
           <svg width="30%" height="20vh" viewBox="0 0 42 42" class="donut">
+            <title>Total Interview</title>
             <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
             <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#212121" stroke-width="3"></circle>
             <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#2196F3" stroke-width="3" stroke-dasharray="40 60" stroke-dashoffset="25"></circle>
@@ -70,6 +73,7 @@
             </g>
           </svg>
           <svg width="30%" height="20vh" viewBox="0 0 42 42" class="donut">
+            <title>Total forwarded</title>
             <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff"></circle>
             <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
             <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#FF5722" stroke-width="3" strofke-dasharray="50 50" stroke-dashoffset="25"></circle>
@@ -86,79 +90,88 @@
           <p class="graph-labels">Totals &nbsp; * &nbsp; out of 567,049,382</p>
         </div>
         <div class="bar-graph-section">
-          <img src="images/bar-graph.png" class="bar-graph">
+          <img src="images/bar-graph.png" class="bar-graph" alt="A graph detailing applicant numbers per month">
           <p class="graph-labels applicants">Applicants/day</p>
         </div>
         <hr class="button-border">
-        <button class="expand-button"><i class="fas fa-angle-down"></i></button>
+        <button class="expand-button" aria-label="click to expand page for more information"><i class="fas fa-angle-down"></i></button>
         <hr class="button-border">
         <section class="details-and-links">
-        <article class="job-description">
+          <article class="job-description">
           <h2 class="job-description-title">JOB DESCRIPTION
             <button class="edit-button"><i class="fas fa-edit"></i>Edit</button>
           </h2>
           <table class="job-info">
             <tr>
               <td class="info-key">Position Title</td>
-              <td>Customer Service Representative</td>
+              <td class="info-description">Customer Service Representative</td>
             </tr>
             <tr>
               <td class="info-key">Location</td>
-              <td>Boulder, CO</td>
+              <td class="info-description">Boulder, CO</td>
             <tr>
             <tr>
               <td class="info-key">Employment Type</td>
-              <td>Full Time</td>
+              <td class="info-description">Full Time</td>
             </tr>
             <tr>
               <td class="info-key">Experience</td>
-              <td>Mid-Level</td>
+              <td class="info-description">Mid-Level</td>
             </tr>
             <tr>
               <td class="info-key">Status</td>
-              <td>Open</td>
+              <td class="info-description">Open</td>
             </tr>
             <tr>
               <td class="info-key">Description</td>
-              <td>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'
+              <td class="info-description">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here'
               </td>
             </tr>
             <tr>
               <td class="info-key">Hiring Lead</td>
-              <td>Bush Gardens</td>
+              <td class="info-description">Bush Gardens</td>
             </tr>
             <tr>
               <td class="info-key" id="no-border">Salary</td>
-              <td id="no-border">1 metric fuck tonne</td>
+              <td id="no-border" class="info-description">1 metric fuck tonne</td>
             </tr>
           </table>
-        </article>
-        <article class="social-media">
-          <button class="reddit"><i class="fas fa-registered"></i>Go on Reddit</button>
-          <button class="tweet"><i class="fab fa-earlybirds"></i>Tweedy says Tweet</button>
-          <button class="hire-me"><i class="fab fa-hire-a-helper"></i>Hire Me Please!</button>
-          <h3><i class="fas fa-globe"></i>Link to This Job</h3>
-          <p class="social-media-p">ext. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
-          <div class="social-media-divs">
-            <p class="links">http://gohereforjob.org</p><p class="copy">Copy</p>
-          </div>
-          <hr>
-          <h3><i class="fas fa-globe"></i>Link to This Job</h3>
-          <p class="social-media-p">ext. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
-          <div class="social-media-divs">
-            <p class="links">http://gohereforjob.org</p><p class="copy">Copy</p>
-          </div>
-          <hr>
-          <h3><i class="fas fa-globe"></i>Link to This Job</h3>
-          <p class="social-media-p">ext. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock</p>
-          <div class="social-media-divs">
-            <p class="links">http://gohereforjob.org</p><p class="copy">Copy</p>
-          </div>
-        </article>
-    </section>
+          </article>
+          <article class="social-media">
+            <button class="reddit" aria-label="Go to reddit"><i class="fas fa-registered"></i>Go on Reddit</button>
+            <button class="tweet" aria-label="tweedy says tweet"><i class="fab fa-earlybirds"></i>Tweedy says Tweet</button>
+            <button class="hire-me" aria-label="for the love of god please hire me"><i class="fab fa-hire-a-helper"></i>Hire Me Please!</button>
+            <h3><i class="fas fa-globe" aria-label="link to this job"></i>Link to This Job</h3>
+            <p class="social-media-p">ext. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock
+            </p>
+            <div class="social-media-divs">
+              <p class="links" aria-label="link to this job">http://gohereforjob.org</p><p class="copy">Copy
+              </p>
+            </div>
+            <hr>
+            <h3><i class="fas fa-globe"></i>Link to This Job
+            </h3>
+            <p class="social-media-p">ext. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock
+            </p>
+            <div class="social-media-divs">
+              <p class="links" aria-label="link to this job">http://gohereforjob.org</p><p class="copy">Copy
+              </p>
+            </div>
+            <hr>
+            <h3><i class="fas fa-globe"></i>Link to This Job
+            </h3>
+            <p class="social-media-p">ext. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock
+            </p>
+            <div class="social-media-divs">
+              <p class="links" aria-label="link to this job">http://gohereforjob.org</p><p class="copy">Copy
+              </p>
+            </div>
+          </article>
+        </section>
+      </section>
     </main>
-    <nav>
-      <img src="images/phoebe.jpg" class="portrait-image">
+    <nav aria-label="navigation bar">
+      <img src="images/phoebe.jpg" class="portrait-image" alt="A super cute chaweeny">
       <h3 class="phoebe">Phoebe!<i class="fas fa-sort-down"></i></h3>
       <ul class="nav-list">
         <li class="list-title">Main</li>
