@@ -236,7 +236,7 @@ tr {
 }
 
 .applicants {
-  width: 30%;
+  width: 43%;
 }
 
 .bar-graph-section {
@@ -425,7 +425,7 @@ tr {
   .reddit,
   .tweet,
   .hire-me {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   .table-sections td {
